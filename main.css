@@ -1,0 +1,65 @@
+:root {
+    --orenge: #ff6a00;
+    --black: #000000;
+    --white: #ffffff;
+    
+}
+
+* {
+    background: var(--bg);
+    font-family: Arial;
+    
+}
+
+body {
+    color: var(--fontColor);
+}
+
+ul {
+    font-family: 'Goudy Old Style';
+}
+
+li {
+    list-style: circle;
+}
+
+.list{ 
+    list-style: square;
+}
+
+#msg {
+    font-family: monospace;
+}
+
+.light-theme {
+    --fontColor: var(--black);
+    --bg: var(--orenge);
+    --btnBorderColor:#00ff21;
+    --btnFontColor: var(--orenge);
+    --btnBgColor: var(--black);
+}
+
+.dark-theme {
+    --fontColor: var(--orenge);
+    --bg: var(--black);
+    --btnBorderColor: #00ff21;
+    --btnFontColor: var(--black);
+    --btnBgColor: var(--orenge);
+}
+
+.btn{
+    position: absolute;
+    top: 12px;
+    left: 200px;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    border: none /*2px solid var(--btnBorderColor)*/;
+    cursor: pointer;
+    color: var(--btnFontColor);
+    background: var(--btnBgColor);
+}
+
+.btn:focus{
+    outline-style:none;
+}
